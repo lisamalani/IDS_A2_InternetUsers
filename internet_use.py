@@ -62,9 +62,9 @@ st.markdown(''' <b>Cellular access </b>refers to mobile data subscriptions to th
 worldJSON = f"world.geojson"
 
 # CSV Files
-fileBroadband = "Internet_Usage\\broadband-penetration-by-country.csv"
-fileCellular = "Internet_Usage\mobile-cellular-subscriptions-per-100-people.csv"
-fileUserShare = "Internet_Usage\share-of-individuals-using-the-internet.csv"
+fileBroadband = "broadband-penetration-by-country.csv"
+fileCellular = "mobile-cellular-subscriptions-per-100-people.csv"
+fileUserShare = "share-of-individuals-using-the-internet.csv"
 
 # Read CSV files
 def load_data_Br():
@@ -216,7 +216,7 @@ def prediction_model(type, country):
 
 
 # CSV file path
-fileUserNumber = "Internet_Usage\\number-of-internet-users-by-country.csv"
+fileUserNumber = "number-of-internet-users-by-country.csv"
 # Function to read CSV file
 def load_data_User():
     data = pd.read_csv(fileUserNumber)
